@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+    float: none;
+    background-color: #f2ecd4;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Chivo', sans-serif!important;
+    font-weight: 700!important;
+}
+.chivo{
+    font-family: 'Chivo', sans-serif!important;
+}
+.brownBg{
+background-color: #392b20!important;
+}
+a{
+    font-family: 'Chivo', sans-serif!important;
+    font-weight: 700;
+    color: #f2ecd4;
+}
+a:hover{
+    color:#b0232a!important;
+}
+.logo{
+    width: 100px!important;
+}
+.red{
+    color: #b0232a!important;
+}
+.brown{
+    color:#392b20!important;
+}
+.banner{
+    height: 300px;
+    background: url('./imgs/banner.jpg')!important;
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center!important;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat!important;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed!important;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover!important;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+background-color: #464646;
+}
+
+#mapid { 
+    width: 1024px;
+    height: 768px;
+    max-width: 100%!important;
+ }

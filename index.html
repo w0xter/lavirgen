@@ -1,11 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Die Jungfrau</title>
+  </head>
+  <body>
+    <nav  class="navbar brownBg" id="navbarScrollSpy">
+        <div class="container mx-auto">
+              <div class="navbar-brand asap">
+                <img  class="img-fluid logo" src="./assets/imgs/logo.png" alt="">
+              </div>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">La Virgen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Biere</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#map">Donde encontrarla</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contacto</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="container">
+          <!-- HOME -->
+          <div id="home"></div>
+        <div class="row py-5">
+            <div class="col-xs-12 col-lg-6 my-auto">
+                <h1 class="brown">LA VIRGEN</h1>
+                <p class="text-justify red">
+                    La Virgen es ist ein reines, lebendiges und frisches Bier, das ehrlich mit ausgewählten Zutaten und nachhaltigen Ressourcen gebraut wird.
+                </p>
+            </div>
+            <div class="col-xs-12 col-lg-6 text-center">
+                <img src="./assets/imgs/logo.png" class="img-fluid" alt="">
+            </div>        
+        </div>
+        <hr>
+        <!-- END HOME -->
+        <!-- PRODUCT -->
+        <span id="product" class="pt-5"></span>
+        <div>
+            <div class="row">
+                <div class="col-5">
+                    <h1 class="brown">Unser Katalog:</h1>
+                </div>
+            </div>
+            <div id="trigo" class="py-5">
+                <div class="row">
+                    <div class="col-5 mx-auto text-center">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-xs-12 col-lg-6">
+                        <img class="img-fluid" src="./assets/imgs/trigo.png" alt="">
+                    </div>
+                    <div class="col-xs-12 col-lg-6 my-auto">
+                        <h2 class="brown">Trigo Limpio</h2>
+                        <p class="text-justify red">
+                            Trigo Limpio es ist unsere Version des klassischen deutschen Hefeweizen. Die beste bayerische Hefe gemischt mit der Geduld und Ruhe eines Sommersonntags am Strand. Extrem erfrischend mit Bananen- und Nelkenaromen. Natürlich bewölkt. Von den World Beer Awards 2017 und 2019 als bestes Weizenbier nach Hefeweizen-Art in Spanien ausgezeichnet.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+            <hr>
+            <div id="madrid" class="py-5">
+                <div class="row">
+                    <div class="col-5 mx-auto text-center">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-xs-12 col-lg-6">
+                        <img class="img-fluid" src="./assets/imgs/madrid.png" alt="">
+                    </div>
+                    <div class="col-xs-12 col-lg-6 my-auto">
+                        <h2 class="brown">Madrid Lager</h2>
+                        <p class="text-justify red">
+                            Madrid Lager es ist unser gärarmes Bier. Es wird auf traditionelle Weise hergestellt, fermentiert und mehr als 40 Tage bei niedrigen Temperaturen gereift, um einen subtilen und ausgewogenen Geschmack zu erzielen. Für die Herstellung werden 4 verschiedene Malzsorten und 3 verschiedene Hopfensorten verwendet. Goldene Farbe aus weißem Schaum. Mäßig bitter.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- END PRODUCT -->
+
+            <hr>
+            <!-- MAP -->
+            <div id="where" class="py-5">
+                <h1 class="brown my-5">Wo Es Zu Finden Ist</h1>
+                    <div id="mapid" class="mx-auto"></div>
+            </div>
+            <!-- END MAP -->
+            <hr>
+            <!-- CONTACT -->
+            <div id="contact" class="py-5">
+                <h1 class="brown">Kontaktiere uns</h1>
+                <h4 class="mt-3 brown ">Telefon: <small class="red">+38-12345678</small></h4>
+                <h4 class="mt-3 brown ">Email: <small class="red">hallo@lavirgen.es</small></h4>
+                <h4 class="mt-3 brown ">Richtung: <small class="red">Rathauspassagen am Alexanderplatz, Rathausstraße 5, 10178 Berlin, Alemania</small></h4>
+
+            </div>      
+            <!--  END CONTACT-->
+      </div>
+      <!-- END CONTAINER -->
+                  <!-- FOOTER -->
+                  <div id="footer" class="browBg">
+                    <nav  class="navbar brownBg" id="navbarScrollSpy">
+                        <div class="container mx-auto">
+                              <div class="navbar-brand asap">
+                                <img  class="img-fluid logo" src="./assets/imgs/logo.png" alt="">
+                              </div>
+                            <ul class="nav nav-pills">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#home">La Virgen</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#product">Biere</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#map">Donde encontrarla</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#contact">contacto</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </nav>
+                </div>
+                <!-- END FOOTER -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
