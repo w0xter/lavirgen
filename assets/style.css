@@ -63,4 +63,7 @@ background-color: #464646;
     #mapid { 
         height: 300px!important;
      }
+     .logo{
+         width: 50px!important;
+     }
   }
